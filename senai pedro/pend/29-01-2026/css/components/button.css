@@ -1,0 +1,10 @@
+.button {
+    display: flex;
+    justify-content: center;
+
+    width: 150px;
+    padding: 10px;
+
+    background-color: var(--secondary-color);
+    color: var(--pramary-color);
+}

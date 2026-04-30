@@ -1,0 +1,114 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 50px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  padding: 15px;
+  font-family: Arial;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.car {
+  position: absolute;
+  width: 150%;
+  height: 81px;
+  top: 150px;
+  left: -400px;
+  transform: rotate(25deg);
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.card:hover .car {
+  opacity: 1;
+  left: -74px;
+}
+
+.card .piloto {
+  width: 200px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  filter: drop-shadow(10px 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.card h2 {
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.card span {
+  position: absolute;
+  left: -5px;
+  top: 25px;
+  writing-mode: vertical-rl;
+  transform: rotate(360deg);
+  font-weight: bold;
+  font-size: 2.5rem;
+  z-index: 50;
+}
+
+.card p {
+  width: 75%;
+  position: absolute;
+  top: 15%;
+  left: 75%;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0.3;
+  transform: translate(-50%);
+}
+.paginacao {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.paginacao button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.paginacao button:hover {
+  background-color: #e10600;
+  transform: translateY(-2px);
+}
+
+.paginacao .ativo {
+  background-color: #e10600;
+  transform: scale(1.1);
+}

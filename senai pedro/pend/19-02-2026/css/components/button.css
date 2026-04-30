@@ -1,0 +1,84 @@
+.hero__button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 24px;
+  margin-top: 24px;
+  border: none;
+  background-color: #fff;
+  color: #005eff;
+  cursor: pointer;
+  box-shadow: 0 3px 3px #005eff;
+  transition: all 0.3s ease;
+}
+
+.hero__button:hover {
+  background-color: #005eff;
+  color: #fff;
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+.feature__card-button {
+  position: absolute;
+  bottom: -100px;
+  opacity: 0;
+  pointer-events: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: none;
+  box-shadow: 1px 1px 5px #bebebe;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+.feature__card:hover .feature__card-button {
+  opacity: 1;
+  bottom: 30px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.feature__card-button .fa-solid {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #005eff !important;
+}
+
+.company__card-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 60px;
+  border: none;
+  background-color: #005eff;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.company__card-button:hover {
+  cursor: pointer;
+  border: 1px solid #005eff;
+  background-color: #fff;
+  color: #005eff;
+}
+
+.services__main-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 48px;
+  border: none;
+  background-color: #fff;
+  color: #234f90;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__main-button .fa-solid {
+  font-size: 0.7rem;
+}

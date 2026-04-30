@@ -1,0 +1,56 @@
+.company {
+  background-color: #f1f1f1;
+  padding: 30px 15%;
+}
+
+.company__container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding-top: 40px;
+}
+
+.company__main,
+.company__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.company__title {
+  color: #234f90;
+  line-height: 1;
+  display: block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  width: 220px;
+}
+
+.company__text p,
+.company__signature-role,
+.company__card-text {
+  color: #8a8a8a;
+  font-size: 0.8rem;
+}
+
+.company__signature-name {
+  line-height: 1;
+  display: block;
+  color: #234f90;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.company__card-image {
+  width: 100%;
+  height: 175px;
+}
+
+.company__card-title {
+  color: #234f90;
+  font-weight: 800;
+}

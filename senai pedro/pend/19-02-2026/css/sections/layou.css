@@ -1,0 +1,117 @@
+:root {
+    --primary-blue: #007bff;
+    --dark-bg: #0a1118;
+    --text-gray: #b0b0b0;
+    --white: #ffffff;
+}
+
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.layou-section {
+    padding: 60px 10%;
+    background-color: #fff;
+}
+
+.layou-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr) 8fr; 
+    gap: 10px;
+    align-items: center;
+   
+}
+
+.layou-item h2 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin: 0;
+}
+
+.layou-item p {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 5px;
+}
+.layou-footer {
+    background-color: var(--dark-bg);
+    color: var(--white);
+    padding: 60px 10%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+    gap: 40px;
+}
+
+.footer h3 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary-blue);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: var(--text-gray);
+    cursor: pointer;
+}
+
+.footer::before {
+    content: "> ";
+    color: var(--primary-blue);
+    margin-right: 5px;
+
+}
+
+.layou-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.layou-form  {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+}
+
+.layou-form button {
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    font-weight: bold;
+    gap: 25px;
+
+}
+
+.layou-icons {
+    margin-top: 20px;
+}
+
+.layou-icons span {
+    background: #1a242f;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .layou-grid {
+        grid-template-columns: 1fr; 
+    }
+}

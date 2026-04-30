@@ -1,0 +1,10 @@
+.layout {
+  display: grid;
+  grid-template:
+    "hero" 90vh
+    "why" 400px
+    "about" 400px
+    "company" 450px
+    "services" 400px
+    "global" 350px / 1fr;
+}
